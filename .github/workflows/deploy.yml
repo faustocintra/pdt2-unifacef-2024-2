@@ -21,11 +21,11 @@ jobs:
 
             # 2) Assegura que o node está instalado no
             #    container com uma versão específica
-            - name: Use Node.js v. 20
-              uses: actions/setup-node@v3
-              with:
-                node-version: 20
-                cache: 'npm'
+            # - name: Use Node.js v. 20
+            #   uses: actions/setup-node@v3
+            #   with:
+            #     node-version: 20
+            #     cache: 'npm'
 
             # 3) Alterna para a pasta do projeto
             - run: cd karangos
