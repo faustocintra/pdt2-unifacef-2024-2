@@ -24,11 +24,11 @@ jobs:
 
             # 3) Assegura que o node está instalado no
             #    container com uma versão específica
-            - name: Use Node.js v. 20
-              uses: actions/setup-node@v3
-              with:
-                node-version: 20
-                cache: 'npm'
+            # - name: Use Node.js v. 20
+            #   uses: actions/setup-node@v3
+            #   with:
+            #     node-version: 20
+            #     cache: 'npm'
 
             # 4) Instala as dependências
             - run: npm install
