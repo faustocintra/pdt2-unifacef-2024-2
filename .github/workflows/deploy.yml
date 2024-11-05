@@ -30,6 +30,11 @@ jobs:
             # 4) Instala as dependências
             - run: npm install
 
+            - name: Debug environment variable
+              env:
+                VITE_API_BASE: ${{ secrets.VITE_API_BASE }}
+              run: echo "VITE_API_BASE=$VITE_API_BASE"
+
             # 5) Faz o build
             - run: npm run build
               env:
