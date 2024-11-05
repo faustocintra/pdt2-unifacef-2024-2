@@ -32,6 +32,8 @@ jobs:
 
             # 5) Faz o build
             - run: npm run build
+              env:
+                VITE_API_KEY: ${{ secrets.VITE_API_BASE }}
 
             # 6) Faz a publicação no GitHub Pages
             # - name: Deploy
